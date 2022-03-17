@@ -55,8 +55,7 @@ const AddItem : React.FC<Props> = ({shoppingList, setShoppingList}) => {
             setQuantity(q);
           }}
         />
-        <TouchableOpacity style={styles.addItemButton} onPress={() => {console.log(item,'---',quantity);
-        }}>
+        <TouchableOpacity style={styles.addItemButton} onPress={() => {addItem()}}>
           <Text style={styles.buttonText}>Add Item</Text>
         </TouchableOpacity>
       </View>
